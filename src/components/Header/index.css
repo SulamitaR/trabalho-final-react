@@ -9,9 +9,6 @@ li {
     float: left;
 }
 
-li:last-child {
-    float: right;
-}
 
 li a {
     display: block;
@@ -21,8 +18,13 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active){
+li a:hover{
     background-color: #1a1a1a;
+    color: #fff;
+}
+
+li a:visited {
+    color: #fff;   
 }
 
 /* .active {
