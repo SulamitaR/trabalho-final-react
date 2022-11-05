@@ -3,7 +3,7 @@ import Login from "./pages/Login";
 import Imoveis from "./pages/Imoveis";
 import Home from "./pages/Home";
 import Quemsomos from "./pages/QuemSomos";
-import IndiqueImoveis from "./pages/IndiqueImoveis";
+import Clientes from "./pages/Clientes";
 
 import Header from "./components/Header"
 
@@ -25,7 +25,7 @@ const Router = () => (
             <Route exact path="/" element={<Home/>}/> 
             <Route path="/login" element={<Login/>}/> 
             <Route path="/imoveis" element={<Imoveis/>}/> 
-            <Route path="/indiqueImoveis" element={<IndiqueImoveis/>}/> 
+            <Route path="/clientes" element={<Clientes/>}/> 
             <Route path="/quemSomos" element={<Quemsomos/>}/> 
         </Routes>
     </BrowserRouter>
