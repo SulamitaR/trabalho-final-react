@@ -2,9 +2,6 @@ import "./index.css";
 import maisEspacoImg from "../../assets/img/mais-espaco.png";
 import mobiliadoLocacaoImg from "../../assets/img/mobiliados_locacao.png";
 import aluguelSemFiadorImg from "../../assets/img/aluguel_sem_fiador.png";
-import petropolisImg from "../../assets/img/petropolis.jpg";
-import teresopolisImg from "../../assets/img/Teresopolis.jpg";
-import friburgoImg from "../../assets/img/Friburgo.png";
 
 const Home = () => {
 
