@@ -1,6 +1,64 @@
-.informacoes-imoveis-imagens {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 32px;
-    flex-wrap: wrap;
+body {
+    --cor-primaria: #1e8646;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+.card {
+    margin-bottom: 3%;
+    height: 98%;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(154, 150, 150, 0.6);
+}
+
+.grid h3 {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  padding: 5px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+#container {
+    width: 100vw !important;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -120px;
+}
+
+.titulo-principal, .subtitulo-principal {
+    width: 80%;
+    color: #0f0f0f;
+    font-weight: bolder;
+    text-shadow: white 0.1em 0.1em 0.2em
+}
+
+.container-principal {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15vh;
+    padding-bottom: 25vh;
+    background-image: url("../../assets/img/bg-image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+
+.container-informacoes {
+    margin-bottom: 50px;
+}
+
+.container-informacoes-empresa {
+    padding-bottom: 55px;
+}
+
+.container-informacoes-empresa h3 {
+    text-transform: uppercase;
+    padding: 30px;
+    font-weight: 900;
 }

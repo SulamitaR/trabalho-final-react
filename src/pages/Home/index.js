@@ -1,45 +1,55 @@
-import "./index.css"
+import "./index.css";
 import maisEspacoImg from "../../assets/img/mais-espaco.png";
 import mobiliadoLocacaoImg from "../../assets/img/mobiliados_locacao.png";
-import aceitaPetsImg from "../../assets/img/aceita_pets.png";
 import aluguelSemFiadorImg from "../../assets/img/aluguel_sem_fiador.png";
 import petropolisImg from "../../assets/img/petropolis.jpg";
 import teresopolisImg from "../../assets/img/Teresopolis.jpg";
 import friburgoImg from "../../assets/img/Friburgo.png";
 
-const Home= () => {
+const Home = () => {
 
     return (
         <center>
-              <h1>SEJA BEM VINDO A SERRA IMOVEIS</h1>
-              <h3>Aqui você fica por dentro das melhores opções de imovéis disponíveis na região serrana do estado do Rio de Janeiro.</h3>
+            <div class="container-principal" id="container">
+                <h1 class="titulo-principal">SEJA BEM-VINDO A SERRA IMOVEIS</h1>
+                <h3 class="subtitulo-principal">Aqui você fica por dentro das melhores opções de imovéis disponíveis na região serrana do estado do Rio de Janeiro.</h3>
+            </div>
 
-              <div class="informacoes-imoveis-imagens">
-                <div>
-                    <img src={maisEspacoImg}></img>
-                    <h2>Mais espaço para a família</h2>
-                    <p>Se é varanda e áreas comuns que você procura, veja essa seleção de apartamentos e casas à venda.</p>
+            <div class="container container-informacoes">
+                <div class="row grid">
+                <div class="col-md">
+                <div class="card">
+                    <h3>Ambientes espaçosos</h3>
+                    <div class="card-header">
+                        <img src={maisEspacoImg} width="100%" alt=""></img>
+                    </div>
+                    <div class="card-body">Se é varanda e áreas comuns que você procura, veja essa seleção de apartamentos e casas à venda.</div> 
+                    </div>
                 </div>
-
-                <div>
-                    <img src={mobiliadoLocacaoImg}></img>
-                    <h2>Mobiliados para locação</h2>
-                    <p>imóveis mobiliados para alugarNão quer gastar com móveis agora? Veja os melhores . Pronto para entrar e morar.</p>
+                
+                <div class="col-md">
+                <div class="card">
+                        <h3>Mobiliados para locação</h3>
+                    <div class="card-header">
+                        <img src={mobiliadoLocacaoImg} width="100%" alt=""></img>
+                    </div>
+                    <div class="card-body">Não quer gastar com móveis agora? Veja os melhores imóveis mobiliados para locação.</div> 
+                    </div>
                 </div>
-
-                <div>
-                    <img src={aceitaPetsImg}></img>
-                    <h2>Aceita pets</h2>
-                    <p>Seus peludos junto com você. Encontre as melhores ofertas de aluguel de imóveis para você e seu pet.</p>
+                
+                <div class="col-md">
+                <div class="card">
+                    <h3>Aluguel sem fiador</h3>
+                    <div class="card-header">
+                        <img src={aluguelSemFiadorImg} width="100%" alt=""></img>
+                    </div>
+                    <div class="card-body">Alugar o imóvel dos sonhos nunca foi tão fácil! Encontre os melhores imóveis para alugar.</div> 
+                    </div>
                 </div>
+            </div>
+            </div>
 
-                <div>
-                    <img src={aluguelSemFiadorImg}></img>
-                    <h2>Aluguel sem fiador</h2>
-                    <p>Alugar o imóvel dos sonhos nunca foi tão fácil! Encontre os melhores imóveis para alugar.</p>
-                </div>
-
-              </div>
+            <hr></hr>
         </center>
     )
 }
