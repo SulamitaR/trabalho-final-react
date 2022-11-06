@@ -2,9 +2,15 @@ import "./index.css";
 import maisEspacoImg from "../../assets/img/mais-espaco.png";
 import mobiliadoLocacaoImg from "../../assets/img/mobiliados_locacao.png";
 import aluguelSemFiadorImg from "../../assets/img/aluguel_sem_fiador.png";
+import joaoImg from "../../assets/img/joao.jpg";
+import yanImg from "../../assets/img/yan.jpg";
+import deboraImg from "../../assets/img/poo.jpg";
+import webersonImg from "../../assets/img/weberson.jpg";
+
+
+
 
 const Home = () => {
-
     return (
         <center>
             <div class="container-principal" id="container">
@@ -47,6 +53,51 @@ const Home = () => {
             </div>
 
             <hr></hr>
+
+            <section id="testimonials">
+
+            <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2>"Melhores corretores do mercado, agilidade, seriedade e compromisso."</h2>
+                        <img class="testimonial-image" src={joaoImg}></img>
+                        <em>João Felipe</em>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="testimonial-text">"Qualidade, agilidade e profissionalismo em sistemas imobiliários, eu indico e destaco o melhor custo benefício do mercado! Sempre com novas atualizações e estou com a SERRA IMÓVEIS a mais de 14 anos."</h2>
+
+
+                        <img class="testimonial-image" src={deboraImg}></img>
+                        <em>Débora Souza</em>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="testimonial-text">"Parabéns SERRA IMÓVEIS, vocês são EXEMPLO de OTIMA empresa prestadora de serviço. Empresa feita por gente. Quero agradecer ao serviço prestado por vocês, eficiente e ágil."</h2>
+
+
+                        <img class="testimonial-image" src={yanImg}></img>
+                        <em>Yan Tedesco</em>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="testimonial-text">"Super indico os serviços da SERRA IMÓVEIS, conseguiram "automagicamente" o imóvel que eu precisava."</h2>
+                        <img class="testimonial-image" src={webersonImg}></img>
+                        <em>Weberson Rodrigues</em>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+
+                <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+
+        </section>
         </center>
     )
 }
