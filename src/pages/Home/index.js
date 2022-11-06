@@ -97,7 +97,12 @@ const Home = () => {
                 </a>
             </div>
 
-        </section>
+        </section><hr></hr>
+
+
+        <footer class="rodape">
+            <p>Feito com o &#128154;</p>
+        </footer>
         </center>
     )
 }
