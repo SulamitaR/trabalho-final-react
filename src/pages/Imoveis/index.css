@@ -1,12 +1,13 @@
 .card{
-    /* max-width: 300px; */
+    max-width: 300px; 
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     cursor: pointer;
     background-color: rgb(192, 248, 170);
 }
 .img-card{
-    max-width: 260px;
-    max-height: 260px;
+    max-width: 280px;
+    max-height: 270px;
+    
 
 }

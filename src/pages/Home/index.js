@@ -101,7 +101,8 @@ const Home = () => {
 
 
         <footer class="rodape">
-            <p>Feito com o &#128154;</p>
+            Direitos reservados a Serratec. Feito com o &#128154;
+            
         </footer>
         </center>
     )
