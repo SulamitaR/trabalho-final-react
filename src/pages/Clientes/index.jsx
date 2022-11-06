@@ -8,9 +8,13 @@ import { FormStyled } from "./style-form.js";
 import FormularioCadastroCliente from "../../components/FormularioCadastroCliente/index";
 import FormularioAtualizacaoCliente from "../../components/FormularioAtualizacaoCliente/index";
 import FormularioExclusao from "../../components/FormularioExclusao/index";
+import FormularioListarCliente from "../../components/FormularioListarCliente/index";
+import FormularioListarClientes from "../../components/FormularioListarClientes/index";
 
 const Clientes = () => {
     const [clientes, setClientes] = useState([]);
+    const [cliente, setCliente] = useState([]);
+    const [listarClientes, setlistarClientes] = useState([]);
 
       const cadastrarCliente = async (clienteCadastrado) => {
         try {
@@ -46,9 +50,34 @@ const Clientes = () => {
             console.log(error);
           }
         };
+
         obterClientes();
         }, []);
 
+        let exibe = false
+        const exibirClientes = async (exibe) => {
+          if(exibe !== true) {
+            exibe = false
+          }
+  
+          if(exibirClientes) {
+            try {
+              const response = await Api.get("/cliente");
+              setCliente([])
+              setlistarClientes(response.data);
+            } catch (error) {
+              console.log(error);
+            }
+          }
+        };
+
+        const localizarCliente = (id) => {
+          let clienteLocalizado = clientes.filter(cliente => cliente.id == id);
+          setlistarClientes([])
+          setCliente(clienteLocalizado)
+        };
+
+        console.log(cliente)
 
     return (
         
@@ -57,10 +86,13 @@ const Clientes = () => {
             <FormularioCadastroCliente clienteCadastrado={cadastrarCliente} />
             <FormularioAtualizacaoCliente clienteAtualizar={atualizarCliente} />
             <FormularioExclusao excluir={excluirCliente} />
+            <FormularioListarCliente localizar={localizarCliente} />
+            <FormularioListarClientes exibe={exibirClientes} />
           </FormStyled>   
             
               <ClienteStyled>
-              {/* clientes.map(cliente => <Cliente key={cliente.id} nome={cliente.nome} cpf={cliente.cpf} email={cliente.email} />) */}
+              {cliente.map(cliente => <Cliente key={cliente.id} nome={cliente.nome} id={cliente.id} cpf={cliente.cpf} email={cliente.email} />)}
+              {listarClientes.map(cliente => <Cliente key={cliente.id} nome={cliente.nome} id={cliente.id} cpf={cliente.cpf} email={cliente.email} />)}
               </ClienteStyled>
         </div>
     )
