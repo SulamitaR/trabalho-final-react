@@ -101,7 +101,7 @@ const Home = () => {
 
 
         <footer class="rodape">
-            Direitos reservados a Serratec. Feito com o &#128154;
+            Direitos reservados a Serra Imoveis. Feito com o &#128154;
             
         </footer>
         </center>
