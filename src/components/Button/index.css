@@ -2,12 +2,10 @@ button {
     min-width: 90px;
     border: 0px;
     background-color: rgb(25, 226, 119);
-    padding: 8px;
-    color: #fff;
-    border-radius: 5px;
+    padding: 5px;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #1a1a1a
+    background-color: rgb(17, 16, 16);
 }
