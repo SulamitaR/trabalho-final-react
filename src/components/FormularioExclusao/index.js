@@ -10,11 +10,8 @@ const FormularioExlusao = (props) => {
     const aoSalvar = (evento) => { 
         evento.preventDefault() 
                                    
-        props.excluir = (
-            {
-                id: id
-            }
-        );
+        props.excluir(id);
+
     }
 
     return (

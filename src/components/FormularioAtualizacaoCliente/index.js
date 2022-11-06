@@ -2,10 +2,11 @@ import { useState } from 'react';
 import Botao from '../Botao';
 import CampoTexto from '../CampoTexto'
 import CampoData from '../CampoData'
-import './FormularioCadastroCliente.css'
+import './FormularioAtualizacaoCliente.css'
 
-const FormularioCadastroCliente = (props) => {
+const FormularioAtualizacaoCliente = (props) => {
 
+    const [id, setId] = useState('');  
     const [nome, setNome] = useState('');  
     const [usuario, setUsuario] = useState(''); 
     const [cpf, setCpf] = useState(''); 
@@ -14,17 +15,18 @@ const FormularioCadastroCliente = (props) => {
     const [cep, setCep] = useState(''); 
 
     const aoSalvar = (evento) => { 
-        evento.preventDefault(); 
-                                   
-        props.clienteCadastrado( 
-            {
+        evento.preventDefault() 
+
+        props.clienteAtualizar(
+            {  
+                id, 
                 nome,
                 usuario,
                 cpf,
                 email,
                 nascimento,
                 cep
-            }
+            },
         )
 
     }
@@ -33,7 +35,15 @@ const FormularioCadastroCliente = (props) => {
         <section className='formulario'>
             <form onSubmit={aoSalvar}>  
 
-                <h2>Cadastro de cliente</h2>
+                <h2>Atualização de cliente</h2>
+
+                <CampoTexto 
+                    obrigatorio={true} 
+                    label="Id" 
+                    placeholder="id" 
+                    valor={id}
+                    aoAlterado={valor => setId(valor)}
+                />
 
                 <CampoTexto 
                     obrigatorio={true} 
@@ -83,7 +93,7 @@ const FormularioCadastroCliente = (props) => {
                 />
         
                 <Botao>
-                    Cadastrar
+                    Atualizar
                 </Botao>
 
             </form>
@@ -92,4 +102,4 @@ const FormularioCadastroCliente = (props) => {
 
 }
 
-export default FormularioCadastroCliente;
+export default FormularioAtualizacaoCliente;
