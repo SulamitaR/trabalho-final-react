@@ -10,6 +10,8 @@ import FormularioAtualizacaoCliente from "../../components/FormularioAtualizacao
 import FormularioExclusao from "../../components/FormularioExclusao/index";
 import FormularioListarCliente from "../../components/FormularioListarCliente/index";
 import FormularioListarClientes from "../../components/FormularioListarClientes/index";
+import FormularioAgrupamento from "../../components/FormularioAgrupamento/index";
+
 
 const Clientes = () => {
     const [clientes, setClientes] = useState([]);
@@ -85,10 +87,13 @@ const Clientes = () => {
           <FormStyled>
             <FormularioCadastroCliente clienteCadastrado={cadastrarCliente} />
             <FormularioAtualizacaoCliente clienteAtualizar={atualizarCliente} />
-            <FormularioExclusao excluir={excluirCliente} />
-            <FormularioListarCliente localizar={localizarCliente} />
-            <FormularioListarClientes exibe={exibirClientes} />
-          </FormStyled>   
+            <FormularioAgrupamento>
+              <FormularioExclusao excluir={excluirCliente} />
+              <FormularioListarCliente localizar={localizarCliente} />
+              <FormularioListarClientes exibe={exibirClientes} />
+          </FormularioAgrupamento>
+          </FormStyled>
+
             
               <ClienteStyled>
               {cliente.map(cliente => <Cliente key={cliente.id} nome={cliente.nome} id={cliente.id} cpf={cliente.cpf} email={cliente.email} />)}

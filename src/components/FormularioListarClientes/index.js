@@ -10,10 +10,10 @@ const FormularioListarClientes = (props) => {
     }
 
     return (
-        <section className='formulario'>
+        <section className='formularioListarClientes'>
             <form onSubmit={aoSalvar}>  
 
-                <h2>Exibir clientes</h2>
+                <h2>Clientes</h2>
         
                 <Botao>
                     Exibir

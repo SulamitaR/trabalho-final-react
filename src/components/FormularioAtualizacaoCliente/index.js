@@ -32,10 +32,10 @@ const FormularioAtualizacaoCliente = (props) => {
     }
 
     return (
-        <section className='formulario'>
+        <section className='formularioAtualizacaoCliente'>
             <form onSubmit={aoSalvar}>  
 
-                <h2>Atualização de cliente</h2>
+                <h2>Atualização</h2>
 
                 <CampoTexto 
                     obrigatorio={true} 

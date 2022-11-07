@@ -123,9 +123,12 @@ const Imoveis = () => {
                         <div className="imagem-card">
                             <img className="img-card" src={imovel.imagem} />
                         </div>
-                        <p>{imovel.nome}</p>
-                        <h2>{imovel.descricao}</h2>
-                        <h2>{ utilDinheiro.converterParaReal(imovel.valor)}</h2>
+                        <p>Código: {imovel.id}</p>
+                        <h2>Descricao: {imovel.descricao}</h2>
+                        <p>Tipo: {imovel.tipo}</p>
+                        <p>Valor: {utilDinheiro.converterParaReal(imovel.valor)}</p>
+                        <p>Bairro: {imovel.bairro}</p>
+                        
                         <Button valor="Adquirir" executar={adquirir} />
 
                     </div>

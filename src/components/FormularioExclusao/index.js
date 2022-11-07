@@ -15,10 +15,10 @@ const FormularioExlusao = (props) => {
     }
 
     return (
-        <section className='formulario'>
+        <section className='formularioExlusao'>
             <form onSubmit={aoSalvar}>  
 
-                <h2>Solicitação de exclusão</h2>
+                <h2>Exclusão</h2>
 
                 <CampoTexto 
                     obrigatorio={true} 

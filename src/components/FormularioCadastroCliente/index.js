@@ -30,10 +30,10 @@ const FormularioCadastroCliente = (props) => {
     }
 
     return (
-        <section className='formulario'>
+        <section className='formularioCadastroCliente'>
             <form onSubmit={aoSalvar}>  
 
-                <h2>Cadastro de cliente</h2>
+                <h2>Cadastro</h2>
 
                 <CampoTexto 
                     obrigatorio={true} 
@@ -81,8 +81,8 @@ const FormularioCadastroCliente = (props) => {
                     value={cep}
                     aoAlterado={valor => setCep(valor)}
                 />
-        
-                <Botao>
+
+                <Botao className="botao">
                     Cadastrar
                 </Botao>
 
