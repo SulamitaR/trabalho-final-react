@@ -2,23 +2,26 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Api from "../../Api";
 import "./index.css"
+import Button from "../../components/Button";
+import utilDinheiro from "../../utils/dinheiro";
+
 
 const Imoveis = () => {
     const [imoveis, setImoveis] = useState([]);
 
-    useEffect (() => {
+    useEffect(() => {
 
-       const getDados = async () => {
-         try {
-           const response = await Api.get("/produto");
-           setImoveis(response.data);
-         } catch (error) {
-           console.log(error);
-         }
-       };
-       getDados();
-   
-       }, []);
+        const getDados = async () => {
+            try {
+                const response = await Api.get("/produto");
+                setImoveis(response.data);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        getDados();
+
+    }, []);
 
     // const imoveis = [
     //     {
@@ -108,7 +111,9 @@ const Imoveis = () => {
 
     // ];
 
-
+    const adquirir = () => {
+        alert("Aqui irá direcionar a tela de comprar/alugar");
+    }
 
     return (
         <div className="row">
@@ -116,11 +121,13 @@ const Imoveis = () => {
                 imoveis.map(imovel => (
                     <div key={imovel.id} className="card col-sm-3">
                         <div className="imagem-card">
-                            <img className="img-card" src={imovel.imagem}/>
+                            <img className="img-card" src={imovel.imagem} />
                         </div>
                         <p>{imovel.nome}</p>
                         <h2>{imovel.descricao}</h2>
-                        <h2>{imovel.valor}</h2>
+                        <h2>{ utilDinheiro.converterParaReal(imovel.valor)}</h2>
+                        <Button valor="Adquirir" executar={adquirir} />
+
                     </div>
                 ))
             }
