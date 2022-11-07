@@ -7,6 +7,7 @@ import Clientes from "./pages/Clientes";
 import Indique from "./pages/Indique";
 import CriarConta from "./pages/CriarConta";
 import Login from "./pages/Login";
+import Usuario from "./pages/Usuario";
 
 import Header from "./components/Header"
 
@@ -26,6 +27,7 @@ const Router = () => (
             <Routes>
                 <Route exact path="/" element={<Home/>}/> 
                 <Route path="/login" element={<Login/>}/> 
+                <Route path="/usuario" element={<Usuario/>}/> 
                 <Route path="/imoveis" element={<Imoveis/>}/> 
                 <Route path="/clientes" element={<Clientes/>}/> 
                 <Route path="/quemSomos" element={<Quemsomos/>}/> 
