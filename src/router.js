@@ -6,6 +6,7 @@ import Quemsomos from "./pages/QuemSomos";
 import Clientes from "./pages/Clientes";
 import Indique from "./pages/Indique";
 import CriarConta from "./pages/CriarConta";
+import Login from "./pages/Login";
 
 import Header from "./components/Header"
 
@@ -24,6 +25,7 @@ const Router = () => (
         <div className="container">
             <Routes>
                 <Route exact path="/" element={<Home/>}/> 
+                <Route path="/login" element={<Login/>}/> 
                 <Route path="/imoveis" element={<Imoveis/>}/> 
                 <Route path="/clientes" element={<Clientes/>}/> 
                 <Route path="/quemSomos" element={<Quemsomos/>}/> 
