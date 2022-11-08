@@ -20,6 +20,10 @@ const QuemSomos = () => {
                                 className="img-fluid rounded-circle" />
                             <h3 className="card-title py-2" >Sulamita Rodrigues</h3>
                             <p className="card-text">
+                                - Corretora - 
+                            </p>
+
+                            <p className="card-text">
                                 Teresópolis - RJ
                             </p>
 
@@ -37,6 +41,9 @@ const QuemSomos = () => {
                                 className="img-fluid rounded-circle" />
                             <h3 className="card-title py-2" >Richard Cardinot</h3>
                             <p className="card-text">
+                                - Corretor - 
+                            </p>
+                            <p className="card-text">
                                 Teresópolis - RJ
                             </p>
                         </div>
@@ -52,7 +59,10 @@ const QuemSomos = () => {
                                 className="img-fluid rounded-circle" />
                             <h3 className="card-title py-2" >Marcia Lima</h3>
                             <p className="card-text">
-                                Nova Friburgo - RJ
+                                - Corretora - 
+                            </p>
+                            <p className="card-text">
+                                Teresópolis - RJ
                             </p>
                         </div>
                     </div>
@@ -66,7 +76,10 @@ const QuemSomos = () => {
                                 className="img-fluid rounded-circle" />
                             <h3 className="card-title py-2" >Gabriel Pacheco</h3>
                             <p className="card-text">
-                                Nova Friburgo - RJ
+                                - Corretor - 
+                            </p>
+                            <p className="card-text">
+                                Teresópolis - RJ
                             </p>
                         </div>
                     </div>
@@ -80,6 +93,9 @@ const QuemSomos = () => {
                             <img src="https://avatars.githubusercontent.com/u/98937422?v=4" alt="foto de perfil"
                                 className="img-fluid rounded-circle" />
                             <h3 className="card-title py-2" >Gabriel Mendes</h3>
+                            <p className="card-text">
+                                - Corretor - 
+                            </p>
                             <p className="card-text">
                                 Teresópolis - RJ
                             </p>
@@ -95,6 +111,9 @@ const QuemSomos = () => {
                             <img src="https://avatars.githubusercontent.com/u/112408095?v=4" alt="foto de perfil"
                                 className="img-fluid rounded-circle" />
                             <h3 className="card-title py-2" >Pedro Veiga</h3>
+                            <p className="card-text">
+                                - Corretor - 
+                            </p>
                             <p className="card-text">
                                 Nova Friburgo - RJ
                             </p>
