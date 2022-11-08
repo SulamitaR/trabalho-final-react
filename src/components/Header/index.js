@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
 
-    if(useLocation().pathname == "/login"){
+    if(useLocation().pathname === "/login"){
         return (<></>);
     }
 
@@ -13,6 +13,7 @@ const Header = () => {
             <li><Link to={'/imoveis'} >Imoveis</Link></li>
             <li><Link to={'/clientes'} >Clientes</Link></li>
             <li><Link to={'/quemsomos'}>Quem somos</Link></li>
+            <li><Link to={'/Login'}>Login</Link></li>
             <li><Link to={'/indique'}>Indicar imóveis</Link></li>
             
             
