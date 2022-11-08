@@ -118,6 +118,9 @@ const Imoveis = () => {
     return (
         <div className="row">
             {
+
+
+
                 imoveis.map(imovel => (
                     <div key={imovel.id} className="card col-sm-3">
                         <div className="imagem-card">

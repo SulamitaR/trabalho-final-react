@@ -5,6 +5,7 @@
 }
 
 .formularioListarCliente form{
+    min-width: 280px;
     max-width: 100%; 
     background-color: #F2F2F2;
     border-radius: 40px; 
