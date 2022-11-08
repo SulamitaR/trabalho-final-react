@@ -8,6 +8,6 @@ export const ClientesStyled = styled.section`
 export const ClienteStyled = styled.section`
     display: flex;
     justify-content: space-around;
-    margin-top: 32px;
+    margin: 32px;
     flex-wrap: wrap;
 `;
