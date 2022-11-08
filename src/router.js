@@ -8,6 +8,7 @@ import Indique from "./pages/Indique";
 import CriarConta from "./pages/CriarConta";
 import Login from "./pages/Login/login";
 
+
 import Header from "./components/Header"
 
 
@@ -31,6 +32,7 @@ const Router = () => (
                 <Route path="/quemSomos" element={<QuemSomos/>}/> 
                 <Route path="/indique" element={<Indique/>}/> 
                 <Route path="/criar-conta" element={<CriarConta/>}/> 
+                
             </Routes>
         </div>
         
