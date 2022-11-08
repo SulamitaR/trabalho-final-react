@@ -2,7 +2,7 @@
 
 import Imoveis from "./pages/Imoveis";
 import Home from "./pages/Home";
-import Quemsomos from "./pages/QuemSomos";
+import QuemSomos from "./pages/QuemSomos";
 import Clientes from "./pages/Clientes";
 import Indique from "./pages/Indique";
 import CriarConta from "./pages/CriarConta";
@@ -26,7 +26,7 @@ const Router = () => (
                 <Route exact path="/" element={<Home/>}/> 
                 <Route path="/imoveis" element={<Imoveis/>}/> 
                 <Route path="/clientes" element={<Clientes/>}/> 
-                <Route path="/quemSomos" element={<Quemsomos/>}/> 
+                <Route path="/quemSomos" element={<QuemSomos/>}/> 
                 <Route path="/indique" element={<Indique/>}/> 
                 <Route path="/criar-conta" element={<CriarConta/>}/> 
             </Routes>
